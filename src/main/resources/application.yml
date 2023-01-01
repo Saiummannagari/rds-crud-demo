@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@demo.cd6fwuwodvbh.us-east-1.rds.amazonaws.com:1521/ORCL
+    username: root
+    password: password
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      max_allowed_packet: 2000
+

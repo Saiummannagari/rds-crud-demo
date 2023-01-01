@@ -2,17 +2,21 @@ package com.example.demo;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Component
 @Getter
 @Setter
-@Entity
+@Entity(name = "Store")
 public class Store {
 
+    @Id
+    @Column(name = "store_id")
     int id;
+
+    @Column(name = "store_name")
     String storeName;
 
     public Store() {
